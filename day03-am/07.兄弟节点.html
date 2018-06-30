@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <!-- previousSibling 获取前面的兄弟节点
+        previousElementSibling 获取获取前面的兄弟元素节点
+        nextSibings 获取下一个兄弟节点
+        nextElementSibings 获取下一个兄弟元素节点 -->
+    <div>
+        <p>hello world 01</p>
+        <p id="test">hello world 02</p>
+        <p>hello world 03</p>
+    </div>
+    <script>
+        let test =document.getElementById("test");
+        let pSiblings=test.previousSibling;
+        let eSiblings=test.previousElementSibling;
+        console.log(pSiblings);
+        console.log(eSiblings);
+    </script>
+</body>
+</html>

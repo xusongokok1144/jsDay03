@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0}
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 100px;
+            position: absolute;
+            left: 100px;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+
+    </div>
+    <script>
+        // offsetLeft   获取元素水平方向偏移位置
+        // offsetTop     获取元素水平方向偏移位置
+        // offsetWidth     获取元素的宽度， 特点：只读属性
+        // offsetHeight    获取元素的高度
+        let test=document.getElementById("test");
+        let offl=test.offsetLeft;
+        let offt=test.offsetTop;
+        let offw=test.offsetWidth;
+        let offh=test.offsetHeight;
+        console.log(offl);
+        console.log(offt);
+        console.log(offw);
+        console.log(offh);
+    </script>
+</body>
+</html>

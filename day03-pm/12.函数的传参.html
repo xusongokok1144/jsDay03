@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // JS中函数传不定参
+        function go(a,b){
+            console.log(a);
+            console.log(a+b);
+            console.log("没有参数");
+        }
+        go();
+        //js中  如何实现重载  使用arguments对象
+        function test(){
+            console.log(arguments);
+        }
+        test(2,3,5)
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        tbody tr:nth-child(even){
+            background: #ff2d51;
+        }
+        tbody tr:nth-child(odd){
+            background: #44cef6;
+        }
+        table,th,td{
+            border: 1px solid #333;
+            width: 500px;
+            line-height: 50px;
+        }
+        table{
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        手机品牌 <input type="text" id="phone">
+        价格    <input type="text" id="price">
+        <button id="btn">btn</button>
+    </div>
+    <table id="table">
+        <thead>
+            <tr><th>手机品牌</th><th>价格</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>苹果7</td><td>8K</td></tr>
+        </tbody>
+    </table>
+    <script>
+        var btn=document.getElementById("btn");
+        var phone=document.getElementById("phone");
+        var price=document.getElementById("price");
+        var tbody=document.getElementById("table").tBodies[0];
+        btn.onclick=function(){
+            var tr=document.createElement("tr");
+            var td=document.createElement("td");
+            td.innerHTML=phone.value;
+            tr.appendChild(td);
+
+            var td1=document.createElement("td");
+            td1.innerHTML=price.value;
+            tr.appendChild(td1);
+            tbody.appendChild(tr);
+        }
+    </script>
+</body>
+</html>

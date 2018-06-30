@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border: 1px solid #333;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>  
+</head>
+<body>
+    <table id="table">
+        <thead>
+            <tr><th>商城</th><th>手机</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>JD商城</td><td>苹果手机</td></tr>
+            <tr><td>天猫</td><td>华为手机</td></tr>
+            <tr><td>拼多多</td><td>魅族手机</td></tr>
+            <tr><td>苏宁</td><td>小米手机</td></tr>
+         </tbody>
+         <script>
+             var table=document.getElementById("table");
+             var thead=table.tHead;
+             var tbody=table.tBodies[0];
+             var rows=tbody.rows;
+             var firstCell=rows[0].cells[0];
+             thead.style.backgroundColor="#eee";
+            for(let i=0;i<rows.length;i++){
+                if(i%2==0){
+                    rows[i].style.backgroundColor="#ff2d51"
+                }else{
+                    rows[i].style.backgroundColor="#44cef6"
+                }
+            }
+            firstCell.innerHTML="银泰百货";
+         </script>
+    </table>
+</body>
+</html>

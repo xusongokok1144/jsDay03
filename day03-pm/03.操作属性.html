@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <p class="one" id="test">
+        hello world
+   </p> 
+   <script>
+    //    getAttribute()     得到属性值
+    //    setAttribute()     设置属性值
+    //    removeAttrbute()   移除属性
+       let test =document.getElementById("test");
+       
+        test.setAttribute("class","two")
+        let cValue=test.getAttribute("class");
+       console.log(cValue);
+   </script>
+</body>
+</html>

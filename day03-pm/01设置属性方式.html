@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test">hello world</p>
+     <script>
+         var p =document.getElementById("test");
+        // test.style.color="red";
+        // test.style["color"]="red";  什么时候使用:当传入的属性是变量的时候
+         function changeStyle(ele,attr,value){
+             ele.style[attr]=value;
+         }
+        //  changeStyle(p,"background","green");
+     </script>
+</body>
+</html>

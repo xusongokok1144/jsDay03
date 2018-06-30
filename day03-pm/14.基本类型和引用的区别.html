@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.基本类型只传值
+        // 2.引用类型传值又传址
+        
+        //  var a =10;
+        //  var b = a;
+        //  console.log(b);
+        var arr = [1,2,3];
+        var b = arr;
+        arr[arr.length] =4;
+        
+        var obj = {
+            name:"chengchao"
+        }
+        var jiang = obj;
+        obj.age = 30;
+        console.log(jiang);
+
+    </script>
+</body>
+</html>
